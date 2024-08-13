@@ -171,6 +171,43 @@ footer a:hover {
             .services-section .card p {
                 font-size: 0.9rem;
             }
+            @media (max-width: 767.98px) {
+    .navbar-brand img {
+        width: 70px;
+    }
+    
+    .contact-section .card {
+        padding: 2rem;
+    }
+    
+    .contact-section .fa-user-check {
+        font-size: 1.5rem;
+    }
+    
+    footer a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+        width: 60px;
+    }
+    
+    .contact-section .card {
+        padding: 1.5rem;
+    }
+    
+    .contact-section .fa-user-check {
+        font-size: 1.2rem;
+    }
+    
+    footer a {
+        font-size: 1.2rem;
+    }
+}
+
         }
         
 
