@@ -18,8 +18,10 @@
 
 </head>
 <body>
+    
+    
     <div class="container">
-        <nav class="navbar navbar-expand-md  navbar-light px-3 sticky-top ">
+        <nav class="navbar navbar-expand-md  navbar-light px-3 sticky-top" role="navigation" aria-label="Main Navigation">
          <a href="#" class="navbar-brand">
             <img src="images/lydia.JPG" class="img-circle" alt="Profile" width="204">
             <img src="images/logo.png" class="rounded" alt="logo" width="204" height="100">
@@ -36,16 +38,16 @@
           <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Div containing menu to be collapsed -->
-      <div class="collapse navbar-collapse" id="togglerNav">
-        <ul class="navbar-nav text-center">
-            <li class="nav-item">
+      <div class="collapse navbar-collapse" id="togglerNav" >
+        <ul class="navbar-nav text-center"  itemscope itemtype="https://schema.org/organisation" >
+            <li class="nav-item" itemprop="link">
                 <a class="nav-link" href="index.html" role="aria-current">Home</a>
             </li>
            
-            <li class="nav-item">
+            <li class="nav-item" itemprop="link">
                 <a class="nav-link" href="about.html ">About </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" itemprop="link">
                 <a class="nav-link" href="contact.html">contact</a>
             </li>
          </ul>
@@ -61,7 +63,7 @@
         </div>
       </section>
 
-      <section class="services-section py-5">
+      <section class="services-section py-5" role="main">
         <div class="container">
           <div class="row text-center">
             <div class="col-md-4 mb-4">
@@ -98,7 +100,61 @@
         </div>
       </section>
     
-</body>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Lydiathedesigner",
+      "url": "http://127.0.0.1:5502/about.html",
+      "logo": "https://www.lydiathedisgner.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+604-783-9410",
+        "contactType": "Customer Service",
+        "areaServed": "CA",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "35 rue de sauterne",
+        "addressLocality": "City",
+        "addressRegion": "Quebec",
+        "postalCode": "k1v8y4",
+        "addressCountry": "CA"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Photography",
+      "provider": {
+        "@type": "Organization",
+        "name": "Lydiathedesigner"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Family Pictures",
+          "description": "We provide high-quality family photography services."
+        },
+        {
+          "@type": "Offer",
+          "name": "Portrait Images",
+          "description": "Capturing stunning portraits for all occasions."
+        },
+        {
+          "@type": "Offer",
+          "name": "Creative Nature Shots",
+          "description": "Experience the beauty of nature through our lens."
+        }
+      ]
+    }
+    </script>
+    </body>
 <footer>
     <div class="container ">
         <div class="row justify-content-center grid gap-0 column-gap-3">

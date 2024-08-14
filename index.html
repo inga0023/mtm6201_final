@@ -17,10 +17,16 @@
 
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="nav">Skip to main nav</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+      </ul>
     <div class="container">
-    <nav class="navbar navbar-expand-md  navbar-light px-3 sticky-top ">
+    <nav class="navbar navbar-expand-md  navbar-light px-3 sticky-top " id="nav">
      <a href="#" class="navbar-brand">
+        
         <img src="images/lydia.JPG" class="img-circle" alt="Profile" width="204">
+
         <img src="images/logo.png" class="rounded" alt="logo" width="204" height="100">
      </a>
       <!-- Button for collapsing the mobile nav menu -->
@@ -53,10 +59,17 @@
    </div>
 
 
-   <main> 
+   <main id="main"> 
      <div class="container">
        <div class="row ">
-        <img src="images/headset.JPG" class="img-fluid" alt="team"  height="620px"> 
+        <picture>
+        <img src="images/headset-1600_x_1600.JPG" class="img-fluid" alt="team"  height="620px"> 
+
+        <source srcset="images/headset-960_x_960.jpg,
+        images/headset-1600_x_1600.jpg 2x,
+        images/headset-1920_x_1920.jpg 3x"
+      media="(max-width: 19200px)" />
+      </picture>
      </div>
      </div>
       <div class="container ">
@@ -66,7 +79,15 @@
        <div class="container ">
       <div class="row justify-content-center align-items-center mb-3">
       <div class="col-3 ">
-       <img src="images/team.jpg" class="img-fluid" alt="team"  height="620px">
+       <picture>
+
+       <img src="images/family-960_x_960.jpg" class="img-fluid" alt="team"  height="620px">
+       <source srcset="images/family-960_x_960.jpg,
+        images/family-1600_x_1600.jpg 2x,
+        images/family-1920_x_1920.jpg 3x"
+      media="(max-width: 19200px)" />
+
+      </picture>
      </div>
      <div class="col-3">
      We provide family pictures
@@ -75,7 +96,13 @@
 
       <div class="row justify-content-center  align-items-center  mb-3">
         <div class="col-3">
-            <img class='img-fluid' src="images/Lydia wImana-5.jpg">
+            <picture>
+            <img class='img-fluid' src="images/baby-960_x_960.jpg">
+            <source srcset="images/baby-960_x_960.jpg,
+            images/baby-1600_x_1600 2x,
+            images/baby-1920_x_1920.jpg 3x"
+          media="(max-width: 19200px)" />
+          </picture>
             </div>
             <div class="col-3">
                 We take Potraite Images for children
@@ -84,7 +111,13 @@
 
             <div class="row justify-content-center align-items-center  mb-3">
                 <div class="col-3">
-                    <img class='img-fluid' src="images/work.jpg">
+                    <picture>
+                    <img class='img-fluid' src="images/work-1600_x_1600.jpg">
+                    <source srcset="images/work-960_x_960.jpg,
+            images/work-1600_x_1600 2x,
+            images/work-1920_x_1920.jpg 3x"
+          media="(max-width: 19200px)" />
+          </picture>
                     </div>
                     <div class="col-3">
                         We take Creative images for nature
@@ -96,6 +129,41 @@
                 
                 
     </main>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Your Company Name",
+          "url": "https://www.lydiathedesigner.com",
+          "logo": "https://www.lydiathedesigner.com/images/logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-604-783-9410",
+            "contactType": "Customer Service",
+            "areaServed": "CA",
+            "availableLanguage": "English"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "35 rue de sauterne",
+            "addressLocality": "City",
+            "addressRegion": "Quebec",
+            "postalCode": "k1v8y4",
+            "addressCountry": "CA"
+          },
+          "sameAs": [
+            "https://www.facebook.com/lydiathedesigner",
+            "https://www.twitter.com/lydiathedesigner",
+            "https://www.instagram.com/lydiathedesigner"
+          ]
+        }
+        </script>
+
+      
+
+ 
+
+
 </body>
 <footer>
     <div class="container ">
